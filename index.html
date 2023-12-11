@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy Food Restaurant</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="assets/css/click.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav id="navbar-example2" class="navbar bg-white px-3 mb-3 justify-content-evenly shadow sticky-top">
+    <a class="navbar-brand text-dark" href="#">
+      <h1>Yummy<span class="text-danger">.</span></h1>
+     </a>
+    <ul class="nav">
+      <li class="nav-item underline">
+        <a class="nav-link" href="#scrollspyHeading1">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading3">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading4">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading5">Chefs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading6">Gallery</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading7">Contact</a>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <button class="btn btn-white border-0 outline-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart3 text-secondary" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg><sup class="fs-5">0</sup>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="cartitems"></li>
+           <li class="subtotal"></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ms-5" href="#scrollspyHeading8"><button type="button"
+            class="btn btn-danger rounded-pill">Book a Table</button></a>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <div id="scrollspyHeading1" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col p-5">
+            <h2 class="display-3 head1 mb-3">Enjoy Your Healthy<br>
+              Delicious Food</h2>
+            <p class="text-muted fs-5 mb-5">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum
+              quas beatae cumque eum quaerat.</p>
+            <button type="button" class="btn btn-danger rounded-pill btn-lg">Book a Table</button>
+            <a href="https://youtu.be/LXb3EKWsInQ" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="35"
+                height="35" fill="currentColor" class="bi bi-play-circle text-danger ms-5" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+              </svg> Watch Vedio</a>
+
+          </div>
+          <div class="col">
+            <img src="img/hero-img.png" class="img-fluid d-block w-100 w-100">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="scrollspyHeading2" class="bg-white p-5">
+      <p class="text-center">ABOUT US</p>
+      <h1 class="text-center head1">LEARN MORE <SPAN class="text-danger">ABOUT US</SPAN></h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+            <div class="position-relative">
+              <img src="img/about.jpg" class="img-fluid d-block image">
+              <div class="position-absolute top-50 start-50 translate-middle-x">
+                <div class="bg-white h-25 w-100 mt-5 p-4">
+                  <h5 class="text-center">Book a Table</h5>
+                  <h2 class="text-danger">+1 5589 55488 55</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</i></p>
+            <ul class="list-unstyled">
+              <li><i class="fa-solid fa-check-double text-danger"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</li>
+              <li><i class="fa-solid fa-check-double text-danger"></i> Duis aute irure dolor in reprehenderit in
+                voluptate velit.</li>
+              <li><i class="fa-solid fa-check-double text-danger"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
+                fugiat nulla pariatur.</li>
+            </ul>
+            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident</p>
+            <div class="position-relative">
+              <img src="img/about-2.jpg" class="img-fluid d-block w-100 h-100">
+              <div class="position-absolute top-50 start-50 translate-middle">
+                <a href="https://youtu.be/LXb3EKWsInQ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor"
+                    class="bi bi-play-circle-fill text-danger" viewBox="0 0 16 16">
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="d-flex flex-row mb-3 justify-content-center bg-light mt-4 gap-4">
+          <div class="bg-danger text-white rdiv">
+            <h1 class="mb-4">Why Choose Yummy?</h1>
+            <p class="mb-4 fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed
+              et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+            <button type="button" class="btn text-white mx-auto d-block rounded-pill btn-lg"
+              style="background-color: #F08080;">Learn More</button>
+          </div>
+          <div class="wdiv">
+            <div class="card p-3 mt-3">
+              <div class="bg-danger-subtle text-danger p-4 mt-3 mx-auto icondiv text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
+                  <path
+                    d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z" />
+                  <path
+                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                </svg>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title text-center mt-4">Corporis voluptates officia eiusmod</h4>
+                <p class="card-text text-muted mt-4 mb-4 text-center">Consequuntur sunt aut quasi enim aliquam quae
+                  harum pariatur laboris nisi ut aliquip</p>
+              </div>
+            </div>
+          </div>
+          <div class="wdiv">
+            <div class="card p-3 mt-3">
+              <div class="bg-danger-subtle text-danger p-4 text-center mt-3 mx-auto icondiv"> <i
+                  class="fa-regular fa-gem" style="font-size: 35px;"></i></div>
+              <div class="card-body">
+                <h4 class="card-title text-center mt-4">Ullamco laboris ladore pan</h4>
+                <p class="card-text text-muted mt-5 mb-4 text-center">Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="wdiv">
+            <div class="card p-3 mt-3">
+              <div class="bg-danger-subtle text-danger p-4 mt-3 mx-auto icondiv text-center"> <svg
+                  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-inboxes"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562A.5.5 0 0 0 1.884 9h12.234a.5.5 0 0 0 .496-.438L14.933 6zM3.809.563A1.5 1.5 0 0 1 4.981 0h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374L3.81.563zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393zm.941.83.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438l.32-2.562H10.45a2.5 2.5 0 0 1-4.9 0H1.066z" />
+                </svg></i></div>
+              <div class="card-body">
+                <h4 class="card-title text-center mt-4">Labore consequatur incidid dolore</h4>
+                <p class="card-text text-muted mt-4 mb-4 text-center">Aut suscipit aut cum nemo deleniti aut omnis.
+                  Doloribus ut maiores omnis facere</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card text-bg-dark w-100 border-0">
+      <img src="img/stats-bg.jpg" class="w-100 img-fluid mx-auto d-block backimg" alt="...">
+      <div class="card-img-overlay">
+        <div class="d-flex flex-row mb-3 mt-5 justify-content-evenly align-items-center text-white">
+          <div class="p-5">
+            <h1>232</h1>
+            <p class="text-light">Clients</p>
+          </div>
+          <div class="p-5">
+            <h1>521</h1>
+            <p class="text-light">Projects</p>
+          </div>
+          <div class="p-5">
+            <h1>1453</h1>
+            <p class="text-light">Hours Of Support</p>
+          </div>
+          <div class="p-5">
+            <h1>32</h1>
+            <p class="text-light">Workers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="scrollspyHeading3">
+      <div class="container mt-5">
+        <div class="text-center">
+          <h6 class="text-muted">OUR MENU</h6>
+          <h1 class="text-center head1">CHECK OUR <SPAN class="text-danger">YUMMY MENU</SPAN></h1>
+        </div>
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="border-0 active menu" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">Starters</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="border-0 menu" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Breakfast</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="border-0 menu" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+              type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Lunch</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="border-0 menu" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled"
+              type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Dinner</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="container text-center">
+              <h6 class="text-muted">MENU</h6>
+              <h2 class="text-danger mb-5">Starters</h2>
+              <div class="row row-cols-1 row-cols-md-3 g-4 elements">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+            tabindex="0">
+            <div class="container text-center">
+              <h6 class="text-muted">MENU</h6>
+              <h2 class="text-danger mb-5">Breakfast</h2>
+              <div class="row row-cols-1 row-cols-md-3 g-4 elements1">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+            tabindex="0">
+            <div class="container text-center">
+              <h6 class="text-muted">MENU</h6>
+              <h2 class="text-danger mb-5">Lunch</h2>
+              <div class="row row-cols-1 row-cols-md-3 g-4 elements2">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+            tabindex="0">
+            <div class="container text-center">
+            <h6 class="text-muted">Menu</h6>
+            <h2 class="text-danger mb-5">Dinner</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 elements3">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- courosel -->
+<div class="container bg-light mt-5">
+  <p class="text-center">TESTIMONIALS</p>
+  <h1 class="text-center head1">WHAT ARE THAY <SPAN class="text-danger">SAYING ABOUT US</SPAN></h1>
+  <div id="carouselExampleAutoplaying" class="carousel slide mt-5" data-bs-ride="carousel">
+     <div class="carousel-indicators">
+      <div class="carousel-item active border-start border-danger w-50">
+        <div class="d-flex justify-content-center">
+        >
+          <div class="flex-grow-1 ms-3 border-left">
+            <p class="fs-6 text-wrap me-4"><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor,sit amet, consectetur
+               adipisicing elit.Repellendus quos nihil ullam quo
+                quae id nam harum autem repellat esse <i class="fa-solid fa-quote-right text-danger"></i></p>
+                <h6>Soul Goodman</h6>
+                <p class="text-muted">Ceo & Founder</p>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+
+          </div>
+          <div class="flex-shrink-0">
+            <img src="img/testimonials/testimonials-1.jpg"
+             alt="..." class="img-fluid rounded-circle ms-4"
+             height="150" width="150">
+          </div>
+        </div>
+        </div>
+        </div>
+        
+      
+      <div class="carousel-item border-start border-danger w-50">
+       
+        <div class="d-flex justify-content-center">
+        
+          <div class="flex-grow-1 ms-3 border-left">
+            <p class="fs-6 text-wrap me-4"><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor,sit amet, consectetur
+               adipisicing elit.Repellendus quos nihil ullam quo
+                quae id nam harum autem repellat esse <i class="fa-solid fa-quote-right text-danger"></i></p>
+                <h6>Sara Wilsson</h6>
+                <p class="text-muted">Designer</p>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+
+          </div>
+          <div class="flex-shrink-0">
+            <img src="img/testimonials/testimonials-2.jpg"
+             alt="..." class="img-fluid rounded-circle ms-4"
+             height="150" width="150">
+          </div>
+        </div>
+      </div>
+       <div class="carousel-item border-start border-danger w-50">
+        
+        <div class="d-flex justify-content-evenly
+        align-items-center">
+          <div class="flex-grow-1 ms-3 border-left">
+            <p class="fs-6 text-wrap me-4"><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor,sit amet, consectetur
+               adipisicing elit.Repellendus quos nihil ullam quo
+                quae id nam harum autem repellat esse <i class="fa-solid fa-quote-right text-danger"></i></p>
+                <h6>Jena Karlis</h6>
+                <p class="text-muted">Store Owner</p>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+
+          </div>
+          <div class="flex-shrink-0">
+            <img src="img/testimonials/testimonials-3.jpg"
+             alt="..." class="img-fluid rounded-circle ms-4"
+             height="150" width="150">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item border-start border-danger w-50">
+        
+        <div class="d-flex justify-content-evenly
+        align-items-center">
+          <div class="flex-grow-1 ms-3 border-left">
+            <p class="fs-6 text-wrap me-4"><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor,sit amet, consectetur
+               adipisicing elit.Repellendus quos nihil ullam quo
+                quae id nam harum autem repellat esse <i class="fa-solid fa-quote-right text-danger"></i></p>
+                <h6>John Larson</h6>
+                <p class="text-muted">Entrepreneur</p>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                <i class="fa-sharp fa-solid fa-star text-warning"></i>
+
+          </div>
+          <div class="flex-shrink-0">
+            <img src="img/testimonials/testimonials-4.jpg"
+             alt="..." class="img-fluid rounded-circle ms-4"
+             height="150" width="150">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+    </div>
+    </div>
+
+
+
+
+    <div id="scrollspyHeading4">
+      <div class="mt-5">
+        <p class="text-center">EVENTS</p>
+  <h1 class="text-center head1">SHARE <SPAN class="text-danger">YOUR MOMENTS</SPAN> IN YOUR RESTAURANT</h1>
+      </div>
+      <div class="d-flex flex-row mb-3 mt-2 slider1">
+        <div class="p-0">
+          <div class="card text-bg-dark border-0">
+            <img src="img/events-1.jpg" class="card-img image1" alt="...">
+            <div class="card-img-overlay top-50 start-0 p-2">
+              <h4 class="card-title">Custom Parties</h4>
+                <h3 class="underline">$99</h3>           
+              <p class="card-text">Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+            </div>
+          </div> 
+        </div>
+        <div class="p-0">
+          <div class="card text-bg-dark border-0">
+            <img src="img/events-2.jpg" class="card-img image1" alt="...">
+            <div class="card-img-overlay top-50 start-0 p-2">
+              <h4 class="card-title">Private Parties</h4>
+                <h3 class="underline">$289</h3>           
+              <p class="card-text">In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut dolores ea assumenda et. Delectus saepe accusamus aspernatur.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-0">
+          <div class="card text-bg-dark border-0">
+            <img src="img/events-3.jpg" class="card-img image1" alt="...">
+            <div class="card-img-overlay top-50 start-0 p-2">
+              <h4 class="card-title">Birthday Parties</h4>
+                <h3 class="underline">$499</h3>           
+              <p class="card-text">Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-0">
+          <div class="card text-bg-dark border-0">
+            <img src="img/events-1.jpg" class="card-img image1" alt="...">
+            <div class="card-img-overlay top-50 start-0 p-2">
+              <h4 class="card-title">Custom Parties</h4>
+                <h3 class="underline">$99</h3>           
+              <p class="card-text">Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+            </div>
+          </div> 
+        </div>
+        <div class="p-0">
+          <div class="card text-bg-dark border-0">
+            <img src="img/events-2.jpg" class="card-img image1" alt="...">
+            <div class="card-img-overlay top-50 start-0 p-2">
+              <h4 class="card-title">Private Parties</h4>
+                <h3 class="underline">$289</h3>           
+              <p class="card-text">In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut dolores ea assumenda et. Delectus saepe accusamus aspernatur.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-0">
+          <div class="card text-bg-dark border-0">
+            <img src="img/events-3.jpg" class="card-img image1" alt="...">
+            <div class="card-img-overlay top-50 start-0 p-2">
+              <h4 class="card-title">Birthday Parties</h4>
+                <h3 class="underline">$499</h3>           
+              <p class="card-text">Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="scrollspyHeading5">
+      <div class="mt-5">
+        <p class="text-center">CHEFS</p>
+  <h1 class="text-center head1">OUR <SPAN class="text-danger">PROFESSIONAL</SPAN>CHEFS</h1>
+      </div> 
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+          <div class="col">
+            <div class="card h-100 chef">
+              <img src="img/chefs/chefs-1.jpg" class="card-img-top position-relative" alt="...">
+              <div class="position-absolute end-0 p-2 bg-body-secondary bg-opacity-50 text-secondary m-2 rounded hide">
+                <h3><i class="fa-brands fa-twitter"></i></h3>
+                <h3><i class="fa-brands fa-facebook"></i></h3>
+                <h3><i class="fa-brands fa-instagram"></i></h3>
+                <h3><i class="fa-brands fa-linkedin"></i></h3>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Walter White</h5>
+                <p class="card-text text-muted">Master chefs</p>
+                <p class="fst-italic">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 chef">
+              <img src="img/chefs/chefs-2.jpg" class="card-img-top position-relative" alt="...">
+              <div class="position-absolute end-0 p-2 bg-body-secondary bg-opacity-50 text-secondary m-2 rounded hide">
+                <h3><i class="fa-brands fa-twitter"></i></h3>
+                <h3><i class="fa-brands fa-facebook"></i></h3>
+                <h3><i class="fa-brands fa-instagram"></i></h3>
+                <h3><i class="fa-brands fa-linkedin"></i></h3>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Sarah Jhonson</h5>
+                <p class="card-text text-muted">Patissier</p>
+                <p class="fst-italic">Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 chef">
+              <img src="img/chefs/chefs-3.jpg" class="card-img-top position-relative" alt="...">
+              <div class="position-absolute end-0 p-2 bg-body-secondary bg-opacity-50 text-secondary m-2 rounded hide">
+                <h3><i class="fa-brands fa-twitter"></i></h3>
+                <h3><i class="fa-brands fa-facebook"></i></h3>
+                <h3><i class="fa-brands fa-instagram"></i></h3>
+                <h3><i class="fa-brands fa-linkedin"></i></h3>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">William Anderson</h5>
+                <p class="card-text text-muted">Cook</p>
+                <p class="fst-italic">Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+       </div>
+
+    </div>
+    <div class="mt-5">
+      <p class="text-center">BOOK A TABLE</p>
+<h1 class="text-center head1">BOOK <SPAN class="text-danger">YOUR STAY</SPAN>WITH US</h1>
+    </div>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-4">
+        <img src="img/reservation.jpg" class="img-fluid d-block w-100">
+        </div>
+         <div class="col-8">
+          <div class="row mb-4">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Your Name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="email" class="form-control" placeholder="Your Email" aria-label="Last name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Your Phone" aria-label="Last name">
+            </div>
+          </div>
+
+           <div class="row mb-4">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Date" aria-label="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Time" aria-label="Last name">
+              </div>
+              <div class="col">
+                <input type="number" class="form-control" placeholder="# of people" aria-label="Last name">
+              </div>
+            </div>
+            <div class="mb-4">
+             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+            </div>
+            <button type="button" class="btn btn-danger rounded-pill btn-lg mx-auto d-block p-2 w-25">Book a Table</button>
+
+         </div>
+      </div>
+    </div>
+  </div>
+  
+    <div id="scrollspyHeading6">
+      <div class="container bg-white">
+        <div class="mt-5">
+          <p class="text-center">GALLERY</p>
+    <h1 class="text-center head1">CHECK <SPAN class="text-danger">OUR GALLERY</SPAN></h1>
+        </div>
+        <div class="d-flex flex-row mb-3 mt-5 slider2">ss
+          <div class="p-2"><img src="img/gallery/gallery-1.jpg" class="img-fluid d-block w-100"></div>
+          <div class="p-2"><img src="img/gallery/gallery-2.jpg" class="img-fluid d-block w-100"></div>
+          <div class="p-2"><img src="img/gallery/gallery-3.jpg" class="img-fluid d-block w-100"></div>
+          <div class="p-2"><img src="img/gallery/gallery-4.jpg" class="img-fluid d-block w-100"></div>
+          <div class="p-2"><img src="img/gallery/gallery-5.jpg" class="img-fluid d-block w-100"></div>
+          <div class="p-2"><img src="img/gallery/gallery-6.jpg" class="img-fluid d-block w-100"></div>
+          <div class="p-2"><img src="img/gallery/gallery-7.jpg" class="img-fluid d-block w-100"></div>
+          <div class="p-2"><img src="img/gallery/gallery-8.jpg" class="img-fluid d-block w-100"></div>
+          
+        </div>
+      </div>
+    </div>
+    <div id="scrollspyHeading7">
+      <div class="container bg-white">
+        <div class="mt-5">
+          <p class="text-center">CONTACT</p>
+          <h1 class="text-center head1">NEED HELP? <SPAN class="text-danger">CONTACT US</SPAN></h1>
+        </div> 
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.361281103521!2d-74.00871262426945!3d40.71006263773472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sin!4v1702125591470!5m2!1sen!2sin"
+           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100 mt-4"></iframe>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+          <div class="col">
+            <div class="card mb-3 bg-light border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 rounded-circle bg-danger contact p-3 m-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-map text-white" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"/>
+                  </svg>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-secondary">Our Address</h5>
+                    <p class="card-text">A108 Adam Street, New York, NY 535022</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 bg-light border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 rounded-circle bg-danger contact p-3 m-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope text-white" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                  </svg>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-secondary">Email Us</h5>
+                    <p class="card-text">contact@example.com</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 bg-light border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 rounded-circle bg-danger contact p-3 m-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone text-white" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-secondary">Call Us</h5>
+                    <p class="card-text">+1 5589 55488 55</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 bg-light border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 rounded-circle bg-danger contact p-3 m-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-share-fill text-white" viewBox="0 0 16 16">
+                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
+                  </svg>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-secondary">Opening Hours</h5>
+                    <p class="card-text"><b>Mon-Sat:</b> 11AM - 23PM; <b>Sunday:</b>
+                       Closed</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+ </div>
+ <div class="container">
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Your name" aria-label="First name">
+    </div>
+    <div class="col">
+      <input type="email" class="form-control" placeholder="Your Email" aria-label="Last name">
+    </div>
+  </div>
+  <div class="col-12 mb-4">
+    <input type="text" class="form-control" id="inputAddress" placeholder="Subject">
+  </div>
+  <div class="mb-4">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+   </div>
+   <button type="button" class="btn btn-danger rounded-pill btn-lg mx-auto d-block p-2 w-25">Send Message</button>
+ </div>
+ <!--Footer-->
+ <div class="container-fluid">
+  <div class="d-flex flex-row justify-content-evenly bg-dark text-white align-items-center p-4 border-bottom border-bottom-secondary mt-5">
+    <div class="p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+      </svg><span class="fs-5 ms-2">Address</span>
+      <p class="text-secondary ms-5 mt-2">A108 Adam Street<br>
+      New York, NY 535022 - US</p>
+    </div>
+    <div class="p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+      </svg><span class="fs-5 ms-2">Reservation</span>
+      <p class="text-secondary ms-5 mt-2">Phone:+1 5589 55488 55<br>
+      Email: info@example.com</p>
+    </div>
+    
+    <div class="p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+      </svg><span class="fs-5 ms-2">Opening Hours</span>
+      <p class="text-secondary ms-5 mt-2">Mon-Sat:11AM-23PM<br>
+      Sunday:Closed</p>
+    </div>
+    <div class="p-2">
+      <h5>Follow Us</h5>
+      <div class="p-2 ms-2 rounded d-flex text-secondary justify-content-evenly">
+        <div class="p-2 border border-1 border-secondary rounded-circle"><a href="#"><i class="fa-brands fa-twitter fs-3"></i></a></div>
+        <div class="p-2 border border-1 border-secondary rounded-circle ms-2"><a href="#"><i class="fa-brands fa-facebook fs-3"></i></a></div>
+        <div class="p-2 border border-1 border-secondary rounded-circle ms-2"><a href="#"><i class="fa-brands fa-instagram fs-3"></i></a></div>
+        <div class="p-2 border border-1 border-secondary rounded-circle ms-2"><a href="#"><i class="fa-brands fa-linkedin fs-3"></i></a></div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="bg-dark text-secondary text-center">
+    <p class="p-4 mb-0">&copy; Copyright <b>Yummy</b>.All Rights Reserved<br>
+    Designed by BootstrapMade</p>
+  </div>
+  </div>
+  <div class=" float-end sticky-bottom p-2">
+         
+    <a href="#top">
+      <div class="p-2">
+          <svg xmlns="http://www.w3.org/2000/svg"  class="text-danger" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
+     </a> 
+  
+   </div>
+ <script>
+  $(document).ready(function(){
+    $('.slider1').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  dots:true,
+  autoplaySpeed: 2000,
+}); 
+$('.slider2').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  dots:true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+				
+
+  })
+ </script>
+ <script src="js/slick.js"></script>
+ <script src="js/slick.min.js"></script>
+ </body>
+ </html>
+ <script src="product.js"></script>
+
+
+

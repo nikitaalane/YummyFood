@@ -1,0 +1,108 @@
+a:link,a:visited
+{
+    color: darkgray;
+    font-size: 20px;
+    text-decoration: none;
+}
+.underline,.nav-item:hover
+{
+    text-decoration: 2px solid underline red;
+}
+a:link:hover
+{
+    color:black;
+}
+.head1
+{
+    font-family: monotype corsiva;
+}
+.image
+{
+    height: 650px;
+    width: 700px;
+}
+.div1
+{
+    height: 75px;
+    width: 75px;
+}
+.rdiv
+{
+    width: 350px;
+    height: 450px;
+    text-align: left;
+    padding: 20px;
+}
+.wdiv
+{
+    height: 400px;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+.icondiv
+{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.wdiv:hover
+{
+    transform: scale(1.1,1.1);
+    transition: 2s;
+}
+.backimg
+{
+ height: 350px;
+ filter: opacity(50%);
+}
+.menu
+{
+     margin-left: 20px;   
+    font-size: 20px;
+    text-decoration: 2px solid gray underline;
+    background: transparent;
+}
+.menu:hover
+{
+    color: red;
+}
+.menu:focus
+{
+    text-decoration: 2px solid red underline;
+    color: red;
+}
+.carousel-item
+{
+    margin-left: 25%;
+}
+.image1
+{
+    height: 450px;
+    width: 100%;
+}
+.hide
+{
+    display: none;
+}
+.chef:hover
+{
+    transform: scale(1.1,1.1);
+    transition: 2s;
+}
+.chef:hover .hide
+{
+    display: block;
+}
+.contact
+{
+height: 65px;
+width: 65px;
+}
+.dropdown-menu
+{
+    margin-left: -150px;
+    width: max-content;
+}
+
+
